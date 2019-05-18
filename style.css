@@ -1,0 +1,810 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body, html{
+	margin: 0;
+	padding: 0;
+	background: #262626;
+}
+
+a{
+	text-decoration-style: none;
+	text-decoration: none;
+}
+
+.top-head{
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 99999;
+	width: 100%;
+	min-height: 10vh;
+	background: transparent;
+}
+
+.top-head-search{
+	text-align: right;
+	position: fixed;
+	z-index: 9999999;
+	background: transparent;
+	margin-left: 50%;
+	width: 50%;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.top-head ul{
+	margin: 0;
+	padding: 0;
+}
+
+.top-head ul li{
+	font-size: 15px;
+	float: left;
+	list-style: none;
+	line-height: 10vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'Titillium Web', sans-serif;
+	color: #fcfcfc;
+	letter-spacing: 2px;
+	transition: 0.3s all ease;
+}
+
+.top-head ul li:hover{
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+}
+
+.top-head embed{
+	padding-right: 2vh;
+	padding-left: 2vh;
+	height: 3.5vw;
+	float: left;
+	filter: invert(100%);
+}
+
+.top-head-search i.fa-search{
+	color: #fcfcfc;
+	line-height: 10vh;
+	float: right;
+	cursor: pointer;
+	transition: 0.3s all ease;
+}
+
+.carousel{
+	height: 100vh;
+}
+
+.carousel-inner{
+	height: 100vh;
+}
+
+.carousel-item{
+	height: 100vh;
+}
+
+.slider h5{
+	text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+	
+}
+
+.search-btn{
+	text-decoration: none;
+	float: right;
+	width: 2.85vw;
+	height: 2.85vw;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-txt{
+	font-family: 'Quicksand', sans-serif;
+	background: none;
+	outline: none;
+	border: none;
+	float: left;
+	padding: 0;
+	color: #fff;
+	font-size: 1.1vw;
+	transition: 0.4s;
+	line-height: 2.5vw;
+	width: 0vw;
+	border-bottom: 2px solid #fff;
+}
+
+.search-box{
+	margin: 2vh;
+	width: 20vw;
+}
+
+.search-box:hover{
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+}
+
+.search-box:hover .search-txt{
+	width: 17.1vw;
+	padding: 0 6px;
+}
+
+.slider h5{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.slider p{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.photo1{
+	width: 100%;
+	height: 100vh;
+	background: url(https://img1.goodfon.com/original/1920x1080/2/44/ferrari-laferrari-ferrari-3148.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: brightness(0.5);
+}
+
+.photo2{
+	width: 100%;
+	height: 100vh;
+	background: url(https://wallpapershome.ru/images/wallpapers/yaguar-1920x1080-elektromobil-superkar-obzor-3009.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: brightness(0.5);
+}
+
+.photo3{
+	width: 100%;
+	height: 100vh;
+	background: url(https://www.avtorinok.ru/photo/Jaguar_XFR_S_pic_112974.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: brightness(0.5);
+}
+
+
+.park-content-container{
+	width: 100%;
+	max-width: 1400px;
+	min-height: 90vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.park-content{
+	margin: 0 auto;
+	width: 90%;
+	min-height: 90vh;
+	background: #444;
+	padding-bottom: 5vh;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.park-content h3{
+	background: linear-gradient(90deg, #444 50%, #ff3838 100%);
+	text-transform: uppercase;
+	color: #fcfcfc;
+	padding: 5vh;
+	text-shadow: 0 0 10px #fcfcfc;
+	font-family: 'Titillium Web', sans-serif;
+	border-bottom: 2px solid #fcfcfc;
+}
+
+.park-card{
+	background: #393939;
+	border-left: 2px solid #fcfcfc;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	width: 95%;
+	min-height: 30vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.park-card:hover{
+	transform: scale(1.02);
+	background: #202020;
+	border-left: none;
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+.inner-park-card{
+	margin: 2.5vh;
+	display: block;
+	height: 25vh;
+	width: 100%;
+}
+
+.photocard1, .photocard2, .photocard3, .photocard4, .photocard5, .characteristics, .price, .button-block{
+	width: 22.5%;
+	height: 25vh;
+	float: left;
+	margin-right: calc(10% / 3);
+}
+
+.button-block{
+	margin-right: 0;
+}
+
+.photocard1{
+	background: url(https://www.nastol.com.ua/pic/201404/1920x1080/nastol.com.ua-93277.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.photocard2{
+	background: url(https://cdn.motor1.com/images/mgl/gbo0w/s1/lamborghini-huracan-performante.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.photocard3{
+	background: url(https://cms-i.autodaily.vn/du-lieu/2018/09/12/ferrari-laferrari-nhung-dieu-can-biet-2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.photocard4{
+	background: url(https://img.wallpapersafari.com/desktop/1920/1080/23/85/hmVNdr.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.photocard5{
+	background: url(https://cdn.motor1.com/images/mgl/GVovJ/s1/2017-bugatti-chiron-first-drive.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.characteristics{
+	text-align: center;
+	color: #fcfcfc;
+	padding: 1vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.characteristics h5{
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1px;
+}
+
+.characteristics h6{
+	display: block;
+	margin-top: 1vh;
+	color: #777;
+}
+
+.characteristics span{
+	display: block;
+}
+
+.price{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #777;
+}
+
+.price-number{
+	transition: 0.3s all ease;
+	color: #fcfcfc;
+}
+
+.price-number:hover{
+	transform: scale(1.05);
+}
+
+.inner-price span{
+	color: #fcfcfc;
+}
+
+.inner-price h6{
+	display: block;
+	margin-top: 1vh;
+}
+
+.button-block{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.inner-button-block{
+
+}
+
+.like{
+	transition: 0.3s all ease;
+	display: block;
+	line-height: 12.5vh;
+	width: 100%;
+	background: linear-gradient(45deg, #444 90%, #ff3838 10%);
+	color: #fcfcfc;
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 1vh;
+	cursor: pointer;
+}
+
+.comparison{
+	width: 100%;
+	transition: 0.3s all ease;
+	display: block;
+	line-height: 12vh;
+	padding-right: 3vh;
+	padding-left: 3vh;
+	background: linear-gradient(45deg, #444 90%, #ff3838 10%);
+	color: #fcfcfc;
+	font-family: 'Quicksand', sans-serif;
+	cursor: pointer;
+}
+
+.like:hover, .comparison:hover{
+	transform: scale(1.05);
+}
+
+.bottom-nav-menu{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+	min-height: 15vh;
+	background: #444;
+	margin-top: 2.5vh;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.bottom-nav-menu ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.bottom-nav-menu ul li{
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	list-style: none;
+	padding: 5px;
+	margin: 2.5px;
+	padding-bottom: 0;
+	padding-top: 0;
+	color: #fcfcfc;
+}
+
+.bottom-nav-menu ul li:first-child{
+	background: #ff3838;
+	color: #000;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.first-section, .second-section, .third-section, .fourth-section{
+	float: left;
+	width: 25%;
+	min-height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer{
+	width: 100%;
+	min-height: 30vh;
+	background: #222;
+}
+
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+.footer ul li{
+	color: #fcfcfc;
+	list-style: none;
+	float: left;
+	margin-left: 2vw;
+	font-size: 1.25vw;
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+
+.footer ul li:hover{
+	color: #ff3838;
+	text-shadow: 0 0 1px #ff3838;
+}
+
+.footer ul li i.fa{
+	margin-right: 5px;
+}
+
+.footer ul li span{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.first-section h5, .second-section h5, .third-section h5, .fourth-section h5{
+	display: block;
+	width: 100%;
+	color: rgba(255,255,255,0.75);
+	font-weight: normal;
+	padding: 0.7vw;
+	padding-left: 0.3vw;
+	margin: 0.8vw;
+	margin-top: 0.2vw;
+	font-family: 'Quicksand', sans-serif;
+	border-bottom: 2px solid rgba(255,255,255,0.5); 
+}
+
+.info-content-container{
+	width: 100%;
+	max-width: 1400px;
+	min-height: 90vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.info-content{
+	text-align: justify;
+	line-height: 3vh;
+	margin: 0 auto;
+	width: 90%;
+	min-height: 90vh;
+	background: #444;
+	padding: 5vw;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.info-content2{
+	text-align: justify;
+	line-height: 3vh;
+	margin: 0 auto;
+	margin-top: 2.5vh;
+	width: 90%;
+	min-height: 30vh;
+	background: #444;
+	padding: 5vw;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.info-content h2{
+	transform: translate(2.5%, 0);
+	font-family: 'Staatliches', cursive;
+	color: #fcfcfc;
+	letter-spacing: 1px;
+	text-shadow: 0 0 10px #fcfcfc;
+}
+
+.info-content2 h2{
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	color: #fcfcfc;
+	letter-spacing: 1px;
+	text-shadow: 0 0 10px #fcfcfc;
+}
+
+.info-content article{
+	font-family: 'Titillium Web', sans-serif;
+	color: #999;
+	text-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+.info-content embed{
+	filter: invert(100%);
+	width: 12vw;
+	height: 12vw;
+	float: left;
+	shape-outside: circle();
+	margin: 2vw 2vw 2vw 0;
+}
+
+.brand-card{
+	background: #393939;
+	border-left: 2px solid #fcfcfc;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	width: 95%;
+	min-height: 15vh;
+	margin: 0 auto;
+	margin-top: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.first-brand-card{
+	margin-top: 10vh;
+}
+
+.inner-brand-car{
+	margin: 1vh;
+	width: 100%;
+	height: 13vh;
+	display: block;
+}
+
+.emblem{
+	text-align: justify;
+	float: left;
+	height: 13vh;
+	width: 13vh;
+}
+
+.first-emblem{
+	background: url(http://userscontent2.emaze.com/images/1f6b98eb-ebd6-4cc6-9132-ee1ba02d28fe/Slide3_Pic5_636397206073225465.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.first-emblem{
+	background: url(http://userscontent2.emaze.com/images/1f6b98eb-ebd6-4cc6-9132-ee1ba02d28fe/Slide3_Pic5_636397206073225465.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.second-emblem{
+	background: url(http://moziru.com/images/ferrari-clipart-ferrari-logo-14.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.third-emblem{
+	background: url(https://img.icons8.com/color/1600/porsche.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.fourth-emblem{
+	background: url(http://www.carlogos.org/logo/Pagani-logo-1992-1440x900.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.fifth-emblem{
+	background: url(http://pngimg.com/uploads/maserati/maserati_PNG91.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.sixth-emblem{
+	background: url(http://marque-voiture.com/wp-content/uploads/2017/12/Hennessey-logo.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.seventh-emblem{
+	background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/0f56ba20006167.562e3f274eb28.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.eighth-emblem{
+	background: url(http://www.pngonly.com/wp-content/uploads/2017/06/Mclaren-Transparent-Logo-PNG.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.nineth-emblem{
+	background: url(https://listcarbrands.com/wp-content/uploads/2016/02/logo-Koenigsegg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.tenth-emblem{
+	background: url(http://marque-voiture.com/wp-content/uploads/2017/12/Hennessey-logo.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.eleventh-emblem{
+	background: url(http://marque-voiture.com/wp-content/uploads/2017/12/Hennessey-logo.png);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.phrase{
+	text-align: justify;
+	float: right;
+	height: 13vh;
+	width: 50%;
+	margin: 1vh;
+	display: flex;
+	justify-content: center;
+}
+
+.amount, .words{
+	line-height: 11vh;
+}
+
+.words{
+	font-size: 1.15vw;
+	font-family: 'Quicksand', sans-serif;
+	text-shadow: 0 0 10px rgba(0,0,0,.5);
+	color: #fcfcfc;
+}
+
+.amount{
+	font-size: 1.15vw;
+	font-family: 'Quicksand', sans-serif;
+	text-shadow: 0 0 10px rgba(0,0,0,.5);
+	color: #ff3838;
+	padding-right: 0.3vw;
+}
+
+.view-more-brands{
+	background: #393939;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	width: 95%;
+	min-height: 5vh;
+	margin: 0 auto;
+	margin-top: 2vh;
+	text-align: center;
+	line-height: 5vh;
+	color: #fcfcfc;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.view-more-brands:hover{
+	transform: scale(1.01);
+	color: #ff3838;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.contacts-content-container{
+	width: 100%;
+	max-width: 1400px;
+	min-height: 90vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.contacts-content{
+	margin: 0 auto;
+	width: 90%;
+	min-height: 90vh;
+	background: #444;
+	padding: 5vw;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.contact-card{
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	background: #393939;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	width: 95%;
+	min-height: 15vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-card-last{
+	margin-bottom: 5vh;
+}
+
+.contact-card i.fa{
+	color: #fcfcfc;
+	font-size: 3.5vw;
+	transition: 0.3s all ease;
+}
+
+.contact-card i.fa:hover{
+	color: #ff3838;
+	text-shadow: 0 0 5px #ff3838;
+}
+
+.contact-card span{
+	text-decoration: none;
+	transition: 0.3s all ease;
+	color: #999;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 1.5vw;
+	font-size: 1.25vw;
+	border-bottom: 2px solid rgba(255,255,255,0.75);
+}
+
+.contact-card span:hover{
+	text-decoration: none;
+	color: #fcfcfc;
+	border-bottom: 2px solid #ff3838;
+}
+
+.services-content-container{
+	width: 100%;
+	max-width: 1400px;
+	min-height: 90vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.services-content{
+	margin: 0 auto;
+	width: 90%;
+	min-height: 90vh;
+	background: #444;
+	padding: 5vw;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.services-card{
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	background: #393939;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	width: 95%;
+	min-height: 20vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.services-card-last{
+	margin-bottom: 5vh;
+}
+
+.services-card i.fa{
+	color: #fcfcfc;
+	font-size: 3.5vw;
+	transition: 0.3s all ease;
+}
+
+.services-card i.fa:hover{
+	color: #393939;
+	-webkit-text-stroke: 1px #fcfcfc;
+	text-shadow: 0 0 5px #fcfcfc;
+}
+
+.services-card span{
+	text-decoration: none;
+	transition: 0.3s all ease;
+	color: #999;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 1.5vw;
+	font-size: 1.25vw;
+	border-bottom: 2px solid rgba(255,255,255,0.75);
+}
+
+.services-card span:hover{
+	color: #fcfcfc;
+	border-bottom: 2px solid #ff3838;
+}
